@@ -1,7 +1,8 @@
 # A positional argument means its position matters in a function call. A keyword argument is a function argument with
 # a name label. Passing arguments as keyword arguments means order does not matter.
 
-### Example 1:
+
+### Example 1
 def hello_func(greeting, name='You', name1='Me'):  # required positional argument greeting has to come before keyword argument name
     return '{}, {}, {}'.format(greeting, name, name1)
 
@@ -13,7 +14,8 @@ print(hello_func('Hi', 'Corey', 'Schafer'), '\n')  # Hi, Corey, Schafer
 # or be explicitly passed as a keyword argument whose order does not matter.
 print(hello_func(name='Corey', greeting='Hi'), '\n')  # Hi, Corey, Me
 
-### Example 2:
+
+### Example 2
 def student_info(*args, **kwargs):
     print(args)  # a tuple of positional arguments
     print(kwargs)  # a dict of keyword argument pairs
@@ -27,7 +29,7 @@ student_info(*courses, **info)  # upack positional and keyword values using * an
 print('\n')
 
 
-### Example 3:
+### Example 3
 # Number of days per month. First value placeholder for indexing purposes.
 month_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
